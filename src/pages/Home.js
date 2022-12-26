@@ -37,7 +37,9 @@ export default function Home() {
 
     const onSearch = (value) => {
         setSearch(value)
+        setMore(8)
         dispatch(SearchPicture(value, more))
+        window.reload();
     };
 
     return (
